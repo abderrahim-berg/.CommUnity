@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import SchoolCard from './SchoolCard'
 import {Swiper,SwiperSlide} from 'swiper/react';
 import  SwiperCore,{Pagination,Navigation,A11y } from 'swiper';
