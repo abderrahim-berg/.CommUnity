@@ -4,16 +4,18 @@ import './App.css';
 import SchoolCard from './Components/SchoolCard';
 import HomePage from './Pages/HomePage';
 import CardList from './Components/CardList';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-
+import Footer from './Components/Footer';
+import './App.css';
 function App() {
   return (
     <>
+    <div className='content-container'>
     <NavbarComp/>
-    
-   <CardList/>  
-    </>
+    <CardList/> 
+    </div>
+    <div className='footer-pin'><Footer/> </div>
+     </>
   );
 }
 

@@ -2,12 +2,12 @@ import React from 'react'
 import {Card,Button} from 'react-bootstrap'
 import '../App.css';
 
- function schoolCard({image,titre}) {
+ function schoolCard(props) {
   return (
 <Card style={{ width: '18rem',margin:'10px' }}  >
-  <Card.Img variant="top" src={image} />
+  <Card.Img variant="top" src={props.image} />
   <Card.Body>
-    <Card.Title>{titre}</Card.Title>
+    <Card.Title>{props.titre}</Card.Title>
     <Card.Text>
       
     </Card.Text>
