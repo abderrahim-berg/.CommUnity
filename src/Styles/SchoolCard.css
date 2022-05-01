@@ -1,0 +1,7 @@
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+    box-shadow: #1a1d24;
+  }
+  .card{
+    box-shadow: 20px;}

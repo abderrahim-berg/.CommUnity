@@ -1,0 +1,10 @@
+.navbar{
+    z-index: 1000;
+    max-height: 1px;
+  }
+.dropdown.btn{
+    height:6px
+}
+.dropdown-toggle::after {
+    display:none;
+}

@@ -1,6 +1,6 @@
-
+import React from 'react'
 import {Card,Button} from 'react-bootstrap'
-import '../App.css';
+import '../Styles/SchoolCard.css';
 
  function schoolCard(props) {
   return (

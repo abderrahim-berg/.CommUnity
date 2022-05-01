@@ -1,0 +1,95 @@
+.feed {
+    margin: 0  ;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background: linear-gradient(to right top, #dabcff, #43354d); 
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    justify-content: space-evenly;
+}
+.feed::-webkit-scrolbar{
+    display:none;
+}
+.feed_inputContainer {
+    background: white;
+    background-position: center center;
+    position:relative;
+    background-size: cover;
+    height:10%;
+    width: 45%;
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+    border-radius: 2rem;
+    font-size: 20px;
+    margin:0 auto;
+    position: relative;
+    top:160px;
+}
+.feed_input {
+    display:flex;
+    border-bottom:1px solid #eff2f5;
+    padding:15px;
+    min-height: 10vh;
+}
+.feed_input > form {
+    display: flex;
+    width: 100% ;
+}
+.feed_input > form > input {
+    border: none;
+    flex: 1;
+    margin-left: 10px;
+    outline-width: 0;
+    font-weight: 600;
+}  
+.feed_input > form >button{
+    background-color: darkslategray;
+    height: 80%;
+    margin-top: 10px;
+}
+.feed_input > form >textarea{
+    height: 80%;
+    margin-top: 10px;
+}
+.feed__inputOptions {
+    padding-top: 10px;
+    border-top: 1px solid lightgray;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: medium;
+    color:gray;
+    cursor:pointer;
+    padding:15px;
+}
+.re:hover{
+    background-color: #43354d;
+    border-radius: 20px;
+    
+}
+ .re{
+    padding:20px;
+    display:flex;
+    align-items: center;
+    color:gray;
+    margin:5px;
+}
+
+input:is(:focus,:valid){
+    border-color: aquamarine;
+}
+.input_class{
+    width: 1000%;
+    padding: 12px 20px;
+}
+input::-webkit-scrolbar{
+    width: 0px;
+}
+.posts_container {
+    padding: 5px;
+}
+.feed_inputContainer{
+    position: relative;
+    top: 10px;
+
+}

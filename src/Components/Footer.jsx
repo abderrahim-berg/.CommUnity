@@ -1,14 +1,12 @@
-
-import React from "react";
-import '../App.css';
+import React from 'react';
+import '../Styles/Footer.css';
 
 function Footer() {
     var today = new Date();
     var y = today.getFullYear();
   return (
-
-<footer>
-    
+<div className='footer-pin'>
+<footer >  
         <div className='row primary'>
         <div className="column about">
 
@@ -28,7 +26,7 @@ function Footer() {
         </div>
         </div>
 
-        <div className="column links">
+        <div className="column-links">
         <h3>Some Links</h3>
 
         <ul>
@@ -48,28 +46,7 @@ function Footer() {
         </ul>
 
         </div>
-
-
-        <div className="column links">
-        <h3>Some Links</h3>
-        <ul>
-            <li>
-            <a href="#faq">F.A.Q</a>
-            </li>
-            <li>
-            <a href="#cookies-policy">Cookies Policy</a>
-            </li>
-            <li>
-            <a href="#terms-of-services">Terms Of Service</a>
-            </li>
-            <li>
-            <a href="#support">Support</a>
-            </li>
-        </ul>
-        </div>
-
-
-
+        
         </div>
 
         <div className="row copyright">
@@ -85,6 +62,7 @@ function Footer() {
         <p>Copyright &copy; {y} .commUnity</p>
         </div>
 </footer>
+</div>
   )
 }
 
