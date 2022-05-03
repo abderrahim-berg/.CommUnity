@@ -5,7 +5,12 @@ import Postsdata from '../Data';
 import CreateIcon from "@material-ui/icons/Create";
 import {MdArticle}from "react-icons/md";
 import {FaPhotoVideo}from "react-icons/fa";
+import SchoolProfilHeader from './SchoolProfilHeader';
 function Feed({type}) {
+  const [selectedMedia,setSelectedMedia]=useState(null)
+  const fileSelectHandler = event => {
+    setSelectedMedia(event.target.files[0])
+  }
   const [input,setInput]=useState('')
   const [posts, setPosts] = useState(Postsdata)
   const post = (e) => {
@@ -13,13 +18,19 @@ function Feed({type}) {
     setPosts([{
       name: 'ENSMR',
       description: 'This is a test',
-      message: input
+      message: input,
+      postImages: []
+      
     },... Postsdata])
     setInput('')
   }
   return (
     <div className='split right'>
     <div className="feed">
+      <div>
+        <SchoolProfilHeader school='ENSMR' schoolDescription='khassna bash n3mro hnaya olla nkhalliwh hakka?'
+        image="https://files.clubetudiants.ma/inline/1551028532"/>
+      </div>
       <div className="feed_inputContainer">
         <div className="feed_input">
           <CreateIcon />
@@ -31,8 +42,9 @@ function Feed({type}) {
         <div className="feed__inputOptions">
 
           <div className="re">
+                    <input type='file' id='file' onChange={fileSelectHandler} style={{display: "none"}}/>
                     <FaPhotoVideo style={{color :'blue'}}/>
-                    <span>Images/Videos</span>
+                    <label htmlFor='file'><span>Images/Videos</span></label>
           </div>
 
           <div className="re">
@@ -48,7 +60,8 @@ function Feed({type}) {
         name={post.name}
         timestamp={post.timestamp}
         message={post.message} 
-        isStudent={true}/>
+        isStudent={true}
+        postImage={post.postImages}/>
     ))
     }
     </div>

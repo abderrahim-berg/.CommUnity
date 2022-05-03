@@ -6,7 +6,7 @@ import CardList from './Components/CardList';
 import Footer from './Components/Footer';
 import LoginForm from './Components/LoginForm'
 import Profil from './Pages/Profil';
-import Aside from './Components/Aside';
+import SchoolProfilHeader from './Components/SchoolProfilHeader';
 
 
 
@@ -14,7 +14,6 @@ function App() {
   return (<>
    <NavbarComp isLoggedIn={false}/>
    <div className='content-container'>
-     
      <Profil/>
      </div>
     <Footer />

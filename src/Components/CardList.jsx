@@ -4,7 +4,6 @@ import {Swiper,SwiperSlide} from 'swiper/react';
 import  SwiperCore,{Pagination,Navigation,A11y } from 'swiper';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 import 'swiper/css';
 import '../Styles/CardList.css'
 
@@ -49,7 +48,7 @@ function CardList() {
       <React.Fragment>
       <Swiper
         modules={[Navigation, Pagination, A11y]}
-        spaceBetween={50}
+        spaceBetween={30}
         slidesPerView={3}
         navigation
         pagination={{ clickable: true }}

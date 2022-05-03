@@ -3,9 +3,14 @@ import  "../Styles/Post.css";
 import { Dropdown } from 'react-bootstrap';
 import Avatar from "@material-ui/core/Avatar";
 import {AiOutlineEllipsis} from "react-icons/ai";
+import {Swiper,SwiperSlide} from 'swiper/react';
+import  SwiperCore,{Pagination,Navigation,A11y } from 'swiper';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css';
 
-
-function Post({name, timestamp, message , photoUrl,isStudent}) {
+SwiperCore.use([Navigation,Pagination]);
+function Post({name, timestamp, message ,isStudent,postImage}) {
   let editIcon;
   if (!isStudent) {
     editIcon = <div className="re">
@@ -35,6 +40,21 @@ function Post({name, timestamp, message , photoUrl,isStudent}) {
       </div>
       <div className="post_body">
         <p>{message}</p>
+        <div className='post_body_swiper'>
+         <Swiper
+          modules={[Navigation, Pagination, A11y]}
+          spaceBetween={50}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+          
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log('slide change')}>
+         {postImage.map((item) => {
+          return <SwiperSlide ><img src={item.image}/></SwiperSlide>
+          })}
+          </Swiper>
+        </div>
       </div>
       <div className="feed__inputOptions">
   
@@ -45,7 +65,7 @@ function Post({name, timestamp, message , photoUrl,isStudent}) {
           {editIcon}
       </div>       
     </div>
-  );
+  )
 }
 
 export default Post ;
