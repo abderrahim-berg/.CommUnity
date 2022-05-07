@@ -7,6 +7,7 @@ import Footer from './Components/Footer';
 import LoginForm from './Components/LoginForm'
 import Profil from './Pages/Profil';
 import SchoolProfilHeader from './Components/SchoolProfilHeader';
+import ProfileSettings from './Components/ProfilSettings';
 
 
 
@@ -14,11 +15,9 @@ function App() {
   return (<>
    <NavbarComp isLoggedIn={false}/>
    <div className='content-container'>
-     <Profil/>
+     <ProfileSettings/>
      </div>
-    <Footer />
-        
-       
+     <Footer/>
       </>
     );
 }

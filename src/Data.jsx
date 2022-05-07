@@ -36,7 +36,6 @@ const Postsdata=[{
         {
             image:
               "https://files.clubetudiants.ma/inline/1551028532",
-          
           }
       ]
 },

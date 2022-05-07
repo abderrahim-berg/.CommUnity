@@ -51,7 +51,9 @@ function Post({name, timestamp, message ,isStudent,postImage}) {
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log('slide change')}>
          {postImage.map((item) => {
-          return <SwiperSlide ><img src={item.image}/></SwiperSlide>
+          return( <SwiperSlide ><img src={item.image}/></SwiperSlide>
+          
+          )
           })}
           </Swiper>
         </div>

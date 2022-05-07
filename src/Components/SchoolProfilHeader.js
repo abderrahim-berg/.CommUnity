@@ -1,15 +1,15 @@
 import '../Styles/SchoolProfilHeader.css'
 function SchoolProfilHeader(props) {
   return (
-    <div class="card-container">
+    <div className="card-container">
 
-		<div class="upper-container">
-			<div class="image-container">
+		<div className="upper-container">
+			<div className="image-container">
 				<img src={props.image} />
 			</div>
 		</div>
 
-		<div class="lower-container">
+		<div className="lower-container">
 			<div>
 				<h4>{props.school}</h4>
 			</div>
