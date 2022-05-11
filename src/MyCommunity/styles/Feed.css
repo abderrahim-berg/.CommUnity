@@ -1,30 +1,31 @@
 .feed {
+    font-family: Montserrat , sans-serif;
     margin: 0  ;
-    padding-bottom: 50px;
+    padding: 0;
     box-sizing: border-box;
     min-height: 100vh;
-    background: #f0f3f5;
+    background: white; 
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
     justify-content: space-evenly;
-    
 }
-.feed::-webkit-scrolbar{
-    display:none;
+body::-webkit-scrolbar{
+    width:0;
 }
 .feed_inputContainer {
     background: white;
     background-position: center center;
     position:relative;
     background-size: cover;
-    height:40%;
-    width: 80%;
-    border-radius: 6px;
+    height:10%;
+    width: 60%;
+    background: linear-gradient(to right bottom,#96b8ff,#66CC66);
+    border-radius: 3rem;
     font-size: 20px;
     margin:0 auto;
-    border: 1px solid rgb(138, 135, 135);
-    
+    position: relative;
+    top:160px;
 }
 .feed_input {
     display:flex;
@@ -44,9 +45,11 @@
     font-weight: 600;
 }  
 .feed_input > form >button{
-    background-color: darkslategray;
+    color: white;
+    background-color: #96b8ff;
     height: 80%;
     margin-top: 10px;
+    border-radius: 5rem;
 }
 .feed_input > form >textarea{
     height: 80%;
@@ -63,7 +66,7 @@
     padding:15px;
 }
 .re:hover{
-    background-color: #86808b;
+    background-color: gray;
     border-radius: 20px;
     
 }

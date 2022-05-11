@@ -2,6 +2,12 @@
     cursor: pointer;
     transform: scale(1.08);
     box-shadow: #1a1d24;
+
   }
   .card{
     box-shadow: 20px;}
+  .card img{
+    height: 200px;
+    width: 286px;
+  }
+  

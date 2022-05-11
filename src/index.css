@@ -1,5 +1,5 @@
 .FormAll {
-    background-color: #e5ecfa;
+    background-color: white;
     font-family: Montserrat , sans-serif;
     display: flex;  
     justify-content: center;
@@ -7,16 +7,10 @@
   }
   .login {
     color: white;
-    background: 
-      -webkit-linear-gradient(to right, #96b8ff, #66CC66);
-    background: 
-      linear-gradient(to right, #4882ff, #66CC66);
+    background-color: black;
     margin: auto;
-    box-shadow: 
-      0px 2px 10px rgba(0,0,0,0.2), 
-      0px 10px 20px rgba(0,0,0,0.3), 
-      0px 30px 60px 1px rgba(0,0,0,0.5);
-    border-radius: 8px;
+    border: 1px solid rgb(138, 135, 135);
+    border-radius: 6px;
     padding: 50px;
     justify-content: center;
   }
@@ -95,23 +89,8 @@
   }
 
 .NavBar {
-  box-shadow: 
-  0px 1px 5px rgba(0,0,0,0.2), 
-  0px 5px 10px rgba(0,0,0,0.3), 
-  0px 15px 30px 1px rgba(0,0,0,0.5);
-  color: white;
-    background: 
-      -webkit-linear-gradient(to right, #ffffff, #96b8ff);
-    background: 
-      linear-gradient(to right, #ffffff, #86aafa);
-    position: absolute;
-    z-index: 10000;
-  
+    z-index: 10000;   
 }
-
-
-
-
 
 .card:hover{
   cursor: pointer;

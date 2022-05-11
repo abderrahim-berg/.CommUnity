@@ -15,8 +15,8 @@ function LoginForm() {
                 <input type="password" placeholder='••••••••••••••' class='password'></input>
                 <a href="#" class='btn-login' id='do-login'>Login</a>
                 <a href="#" class='forgot'>Forgot?</a>
-                <input type="checkbox" class="rememberMeButton" value="lsRememberMe" id="rememberMe"></input>
-                     <label for="rememberMe" class="rememberMe">Remember me</label>
+                {/*<input type="checkbox" class="rememberMeButton" value="lsRememberMe" id="rememberMe"></input>
+                     <label for="rememberMe" class="rememberMe">Remember me</label>*/}
                     </form>
                 </div>
             </section>

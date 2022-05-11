@@ -61,7 +61,7 @@ function ProfileSettings(props) {
             <i className="bi bi-person" />
           </a>
           <a onClick={() => tabs(1)} className={`tab ${activeTab === 1 && 'active'}`}>
-            <i className="bi bi-mortarboard-fill" />
+            <i className="bi bi-book" />
           </a>
           <a onClick={() => tabs(2)} className={`tab ${activeTab === 2 && 'active'}`}>
             <i className="bi bi-shield-lock" />

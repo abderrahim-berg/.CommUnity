@@ -23,7 +23,7 @@ function NavbarComp({isLoggedIn}){
     profilAvatar = <></>;
   }
 return (
-<Navbar className='NavBar' bg="dark" expand="lg" style={{position:'sticky',top:'0'}}>
+<Navbar className='NavBar'  bg="dark" variant="dark" style={{position:'sticky',top:'0'}}>
   <Container fluid>
     <Navbar.Brand href="/Homepage">.comUnity</Navbar.Brand>
     
@@ -40,20 +40,6 @@ return (
       >
         <Nav.Link href="/Homepage">Home</Nav.Link>
         <Nav.Link href="#action2">About</Nav.Link>
-        <NavDropdown title="Link" id="navbarScrollingDropdown">
-          <NavDropdown.Item ><div className="barNav">
-      <div>
-        <span className="loginiconbah">
-          Sign In
-        </span>
-      </div>
-    </div></NavDropdown.Item>
-          <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item href="#action5">
-            Something else here
-          </NavDropdown.Item>
-        </NavDropdown>
         <Nav.Link href="/login" >
           Login
         </Nav.Link>

@@ -13,17 +13,9 @@ function Footer() {
         <h3>.commUnity</h3>
 
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
-            voluptatem corporis error non,
+        This application is developed by a group of students of the National 
+        School of Mines in Rabat with the aim of bringing together engineering schools in Morocco.
         </p>
-
-        <div className="social">
-            <i className="fa-brands fa-facebook-square"></i>
-            <i className="fa-brands fa-instagram-square"></i>
-            <i className="fa-brands fa-twitter-square"></i>
-            <i className="fa-brands fa-youtube-square"></i>
-            <i className="fa-brands fa-whatsapp-square"></i>
-        </div>
         </div>
 
         <div className="column-links">
@@ -55,7 +47,6 @@ function Footer() {
         <a href="">Home</a>
         <a href="">About</a>
         <a href="">Contact</a>
-        <a href="">Blog</a>
         <a href="">Social</a>
 
         </div>

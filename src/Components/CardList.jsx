@@ -14,31 +14,31 @@ function CardList() {
         {
             image:
               "https://files.clubetudiants.ma/inline/1551028532",
-            titre: 'Ecole nationale superieur des mines Rabat',
+            titre: 'ENSMR',
           
           },
+          {
+            image:
+              "http://www.inpt.ac.ma/sites/default/files/article/image/inpt%20.png",
+            titre: "INPT",
+          
+          },
+          {
+          image:
+          "https://seeklogo.com/images/E/ecole-hassania-des-travaux-publics-maroc-logo-B0A188A6BE-seeklogo.com.png",
+        titre: "EHTP",
+      
+         },
         {
             image:
-              "https://files.clubetudiants.ma/inline/1551028532",
-            titre: "Ecole nationale superieur des mines Rabat",
+              "http://alwadifa-club.com/files/EMI_rabat_764890727.gif",
+            titre: "EMI",
           
           },
           {
             image:
-              "https://files.clubetudiants.ma/inline/1551028532",
-            titre: "Ecole nationale superieur des mines Rabat",
-          
-          },
-          {
-            image:
-              "https://files.clubetudiants.ma/inline/1551028532",
-            titre: "Ecole nationale superieur des mines Rabat",
-          
-          },
-          {
-            image:
-              "https://files.clubetudiants.ma/inline/1551028532",
-            titre: "Ecole nationale superieur des mines Rabat",
+              "https://cdn-07.9rayti.com/rsrc/cache/widen_750/uploads/2016/05/Concours-ENSIAS-2016.jpg",
+            titre: "ENSIAS",
           
           },
       ]; 

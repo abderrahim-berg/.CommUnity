@@ -2,22 +2,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavbarComp from './Components/NavbarComp';
 import './App.css';
-import CardList from './Components/CardList';
-import Footer from './Components/Footer';
-import LoginForm from './Components/LoginForm'
+import HomePage from './Pages/HomePage';
+import ProfilSettingsPage from './Pages/ProfilSettingsPage';
+import LoginPage from './Pages/LoginPage';
 import Profil from './Pages/Profil';
-import SchoolProfilHeader from './Components/SchoolProfilHeader';
-import ProfileSettings from './Components/ProfilSettings';
-
-
-
 function App() {
   return (<>
-   <NavbarComp isLoggedIn={false}/>
-   <div className='content-container'>
-     <ProfileSettings/>
-     </div>
-     <Footer/>
+   <NavbarComp isLoggedIn={true}/>
+     <Profil/> 
       </>
     );
 }

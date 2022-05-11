@@ -9,3 +9,6 @@
 .dropdown-toggle::after {
     display:none;
 }
+.profilAvatar{
+    margin: 0px;
+}
